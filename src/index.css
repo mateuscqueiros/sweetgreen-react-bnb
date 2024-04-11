@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {}
+@layer base {
+  :root {
+    --primary: #f4f3e9;
+    --secondary: #eefc7e;
+  }
+}

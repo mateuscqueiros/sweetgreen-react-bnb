@@ -8,9 +8,15 @@ export type ButtonProps = {
 
 export function Button({ icon, className, children }: ButtonProps) {
   return (
-    <button type="button" className={twMerge('aa', className)}>
+    <button
+      type="button"
+      className={twMerge(
+        'p-4 bg-secondary rounded-full w-36 b-0 text-black cursor-pointer font-semibold flex justify-center items-center',
+        className
+      )}
+    >
       {children}
-      {icon && <span>{icon}</span>}
+      {icon && <span className="ml-2">{icon}</span>}
     </button>
   );
 }

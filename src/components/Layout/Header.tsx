@@ -1,4 +1,5 @@
-import { IconMenu2, IconX } from '@tabler/icons-react';
+import { Icon12Hours, IconMenu2, IconX } from '@tabler/icons-react';
+import { Button } from '../Elements';
 import logo from './logo.svg';
 
 export function Header() {
@@ -25,6 +26,7 @@ export function Header() {
           <img src={logo} alt="Logo" />
         </div>
         <div className="header-actions-fixed">
+          <Button icon={<Icon12Hours />}>Botão</Button>
           <button>Sign in</button>
           <button>Order</button>
         </div>
