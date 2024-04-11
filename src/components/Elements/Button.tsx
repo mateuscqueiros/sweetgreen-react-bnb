@@ -21,6 +21,29 @@ export function Button({ icon, className, children }: ButtonProps) {
   );
 }
 
-export function Action() {
-  return <></>;
+export type ActionButtonProps = {
+  variant: 'primary' | 'secondary';
+} & React.PropsWithChildren;
+
+export function ActionButton({ variant, children }: ActionButtonProps) {
+  let colors = '';
+
+  if (variant === 'primary') {
+    colors = 'bg-header text-white';
+  }
+
+  if (variant === 'secondary') {
+    colors = 'bg-none text-header';
+  }
+
+  return (
+    <div
+      className={twMerge(
+        'font-light uppercase rounded-full py-1 px-5 border-0 cursor-pointer hover:opacity-80',
+        colors
+      )}
+    >
+      {children}
+    </div>
+  );
 }

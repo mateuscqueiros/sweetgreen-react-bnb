@@ -2,10 +2,14 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
-    colors: {
-      primary: 'var(--primary)',
-      secondary: 'var(--secondary)',
+    extend: {
+      colors: {
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        card: 'var(--card)',
+        header: 'var(--header)',
+        faded: 'var(--faded)',
+      },
     },
   },
   plugins: [],
