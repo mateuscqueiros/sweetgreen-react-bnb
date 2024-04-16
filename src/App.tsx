@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, HomeBanner } from './components/Layout';
+import { Header, HomeBanner, HomeCarousel } from './components/Layout';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Header />
       <main className="max-w-[var(--content-width)] mx-auto">
         <HomeBanner />
+        <HomeCarousel />
       </main>
     </div>
   );
