@@ -8,7 +8,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="menu md:h-full">
+    <header className="menu md:h-full max-w-[var(--content-width)] mx-auto">
       <div className="relative w-full mx-auto md:p-5 md:flex md:flex-row md:justify-between md:items-center">
         <nav
           className={twMerge(

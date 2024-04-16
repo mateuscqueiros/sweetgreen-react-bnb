@@ -10,6 +10,8 @@
     --card: #e4dcc9;
     --header: #2b473e;
     --faded: #96958c;
+
+    --content-width: 1200px;
   }
 
   body {

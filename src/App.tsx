@@ -1,10 +1,13 @@
 import './App.css';
-import { Header } from './components/Layout';
+import { Header, HomeBanner } from './components/Layout';
 
 function App() {
   return (
     <div>
       <Header />
+      <main className="max-w-[var(--content-width)] mx-auto">
+        <HomeBanner />
+      </main>
     </div>
   );
 }

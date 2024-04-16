@@ -11,7 +11,7 @@ export function Button({ icon, className, children }: ButtonProps) {
     <button
       type="button"
       className={twMerge(
-        'p-4 bg-secondary rounded-full w-36 b-0 text-black cursor-pointer font-semibold flex justify-center items-center',
+        'p-4 bg-secondary rounded-full b-0 text-black cursor-pointer font-semibold flex justify-center items-center',
         className
       )}
     >
